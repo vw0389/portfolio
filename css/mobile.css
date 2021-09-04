@@ -1,0 +1,11 @@
+/* Tablet and larger */
+
+@media screen and (max-width: 768px) {
+    header h1 {
+        word-wrap: break-word;
+        font-size: 2rem;
+    }
+}
+
+
+/* Phone and smaller */
