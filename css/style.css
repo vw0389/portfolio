@@ -10,6 +10,7 @@ body {
     scroll-behavior: smooth;
     font-family: 'Raleway', sans-serif;
     line-height: 1.6;
+    background-color: #eee;
 }
 
 ul {
@@ -85,7 +86,17 @@ footer {
     font-size: 15px;
 }
 
-footer p a {
+footer ul {
+    display: flex;
+    flex-direction: row;
+}
+
+footer ul li {
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer ul li a {
     color: white;
 }
 
