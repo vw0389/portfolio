@@ -1,4 +1,4 @@
-/* Resets */
+/* Resets & Global*/
 
 * {
     margin: 0;
@@ -21,14 +21,18 @@ a {
     text-decoration: none;
 }
 
-h2 {}
-
 p {
     margin: 10px 0;
 }
 
-img {
-    width: 100%;
+section {
+    display: flex;
+}
+
+section h1 {
+    font-size: 2.3rem;
+    color: #444444;
+    padding-right: 30px;
 }
 
 
@@ -46,7 +50,7 @@ header {
 }
 
 header h1 {
-    font-size: 50px;
+    font-size: 3rem;
 }
 
 header nav ul {
@@ -71,6 +75,84 @@ header nav ul li a:hover {
 /* Header End*/
 
 
+/* About Me Begin */
+
+#about {
+    text-align: center;
+}
+
+#about p {
+    font-size: 1.2rem;
+}
+
+
+/* About Me End */
+
+
+/* Work Begin */
+
+#work .img-container ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#work .img-container ul li {
+    height: 40vh;
+    flex-grow: 1;
+    text-align: center;
+    color: white;
+}
+
+.image-text {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    z-index: 2;
+}
+
+#work .img-container ul li:first-child {
+    flex-grow: 2;
+}
+
+#work .img-container ul li img {
+    border: 10px #444444 solid;
+    border-radius: 10px;
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+
+#work .img-container ul li img:hover {
+    opacity: 0.95;
+}
+
+
+/* Work End */
+
+
+/* Contact me Begin */
+
+#contact ul {
+    display: flex;
+}
+
+#contact ul li {
+    padding: 10px 10px;
+}
+
+#contact ul li i {
+    color: #444444;
+}
+
+#contact ul li i:hover {
+    color: rgb(90, 90, 90);
+}
+
+
+/* Contact me End */
+
+
 /* Footer Begin */
 
 footer {
@@ -83,21 +165,7 @@ footer {
     height: 100px;
     padding: 0 30px;
     width: 100%;
-    font-size: 15px;
-}
-
-footer ul {
-    display: flex;
-    flex-direction: row;
-}
-
-footer ul li {
-    align-items: center;
-    justify-content: space-between;
-}
-
-footer ul li a {
-    color: white;
+    font-size: 1.3rem;
 }
 
 
